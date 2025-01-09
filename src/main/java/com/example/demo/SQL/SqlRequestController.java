@@ -41,7 +41,7 @@ public class SqlRequestController {
             }
 
             model.addAttribute("results", results);
-            return "result"; // Страница с результатами
+            return "result"; 
         } catch (SQLException e) {
             model.addAttribute("message", "Error while executing SQL query: " + e.getMessage());
             return "result";
